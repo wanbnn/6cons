@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+build/
+dist/
+htmlcov/
+token_pypi.txt
+prpm-manifest.json
+prpm-manifest.sig

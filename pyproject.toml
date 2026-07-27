@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "6cons"
+version = "0.1.0"
+description = "Lucide icons as native PyReact SVG components"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "ISC"
+license-files = ["LICENSE"]
+authors = [
+  {name = "wanbnn", email = "wanbnn@users.noreply.github.com"},
+]
+keywords = [
+  "pyreact",
+  "lucide",
+  "icons",
+  "svg",
+  "components",
+  "prpm",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Topic :: Software Development :: User Interfaces",
+]
+dependencies = ["pyreact-framework>=1.0.5"]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+  "pytest>=8",
+  "pytest-cov>=5",
+  "twine>=5",
+]
+
+[project.urls]
+Homepage = "https://github.com/wanbnn/6cons"
+Repository = "https://github.com/wanbnn/6cons"
+Issues = "https://github.com/wanbnn/6cons/issues"
+Lucide = "https://lucide.dev"
+
+[project.scripts]
+"6cons" = "sixcons.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sixcons = ["_catalog.json", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["sixcons"]
+branch = true
+
+[tool.prpm.scripts]
+test = "python -m pytest"
+build = "python -m build"
+check = "python -m twine check dist/*"
