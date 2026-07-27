@@ -44,6 +44,7 @@ dev = [
   "pytest-cov>=5",
   "twine>=5",
 ]
+site = ["uikitpr>=0.3.2"]
 
 [project.urls]
 Homepage = "https://github.com/wanbnn/6cons"
@@ -76,3 +77,5 @@ branch = true
 test = "python -m pytest"
 build = "python -m build"
 check = "python -m twine check dist/*"
+site = "python scripts/build_gallery.py"
+serve = "python -m http.server 8000 --directory _site"

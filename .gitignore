@@ -7,6 +7,7 @@ __pycache__/
 build/
 dist/
 htmlcov/
+_site/
 token_pypi.txt
 prpm-manifest.json
 prpm-manifest.sig

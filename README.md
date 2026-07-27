@@ -9,6 +9,7 @@ Lucide icons as native PyReact SVG components.
 [![PyReact](https://img.shields.io/badge/PyReact-1.0.5%2B-6D4AFF)](https://github.com/wanbnn/pyreact)
 [![Lucide](https://img.shields.io/badge/Lucide-1.27.0-F56565)](https://lucide.dev)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
+[![Gallery](https://img.shields.io/badge/Gallery-GitHub%20Pages-6D4AFF)](https://wanbnn.github.io/6cons/)
 
 </div>
 
@@ -19,6 +20,8 @@ JavaScript runtime.
 
 This project is an independent community port. It is not affiliated with or
 endorsed by the Lucide maintainers.
+
+**Explore and copy every icon:** <https://wanbnn.github.io/6cons/>
 
 ## Installation with PRPM
 
